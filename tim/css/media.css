@@ -1,0 +1,106 @@
+@media screen and (max-width: 515px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+
+  header a {
+    display: none;
+  }
+
+  .mobile_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 10px;
+  }
+
+  .mobile_icon img {
+    display: flex;
+    width: 28px;
+  }
+
+  .popup {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  header.open .popup a {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards .item img {
+    max-width: 400px;
+  }
+
+  .add_new_photo form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add_new_photo::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: -10%;
+    z-index: -1;
+    height: 125%;
+  }
+
+  .add_new_photo form #new_photo_src,
+  #new_photo_text {
+    font-size: 1rem;
+    height: 10vw;
+    text-align: center;
+    width: 80%;
+  }
+  .buttons #add_photo {
+    height: auto;
+    font-size: 0.6rem;
+    margin-top: 25px;
+    padding: 10px;
+    margin-right: 5px;
+  }
+
+  .buttons #cancel {
+    padding: 10px;
+    height: auto;
+    font-size: 0.6rem;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    justify-self: center;
+    align-self: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}

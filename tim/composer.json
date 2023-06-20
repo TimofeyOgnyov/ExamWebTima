@@ -1,0 +1,13 @@
+{
+    "authors": [
+        {
+            "name": "b"
+        }
+    ],
+    "require": {},
+		"autoload": {
+			"psr-4": {
+				"Photos\\": ""
+			}
+		}
+}
